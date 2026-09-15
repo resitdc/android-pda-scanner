@@ -1,0 +1,29 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# Build output
+lib/
+*.tgz
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Android
+android/build/
+android/.gradle/
+android/local.properties
+android/*.iml
+android/.idea/
+android/.cxx/
+
+# iOS
+ios/Pods/
+ios/build/
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcodeproj/xcuserdata/
