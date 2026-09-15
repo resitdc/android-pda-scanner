@@ -1,0 +1,30 @@
+{
+  "name": "react-native-pda-scanner",
+  "version": "1.0.0",
+  "description": "React Native module for intercepting PDA hardware scanner broadcasts",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/index.d.ts",
+  "react-native": "src/index.tsx",
+  "source": "src/index.tsx",
+  "files": ["src", "lib", "android", "ios", "!android/build"],
+  "scripts": {
+    "build": "bob build",
+    "prepack": "bob build"
+  },
+  "author": "EscapeNomade",
+  "license": "MIT",
+  "peerDependencies": { "react": "*", "react-native": "*" },
+  "devDependencies": {
+    "@types/react": "^18.2.44",
+    "react": "18.2.0",
+    "react-native": "0.74.5",
+    "react-native-builder-bob": "^0.30.0",
+    "typescript": "^5.2.2"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": ["commonjs", "module", ["typescript", {"project": "tsconfig.build.json"}]]
+  }
+}

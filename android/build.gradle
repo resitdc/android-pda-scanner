@@ -1,0 +1,17 @@
+buildscript {
+    ext.safeExtGet = {prop, fallback -> rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback}
+    repositories { google(); mavenCentral() }
+    dependencies { classpath("com.android.tools.build:gradle:7.3.1"); classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.22") }
+}
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+android {
+    compileSdkVersion safeExtGet("compileSdkVersion", 33)
+    defaultConfig {
+        minSdkVersion safeExtGet("minSdkVersion", 21)
+        targetSdkVersion safeExtGet("targetSdkVersion", 33)
+    }
+    sourceSets { main { java.srcDirs += ["src/main/java"] } }
+}
+repositories { google(); mavenCentral() }
+dependencies { implementation "com.facebook.react:react-native:+" }
