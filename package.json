@@ -1,6 +1,6 @@
 {
   "name": "react-native-pda-scanner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native module for intercepting PDA hardware scanner broadcasts",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
