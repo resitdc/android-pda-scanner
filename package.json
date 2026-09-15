@@ -12,7 +12,7 @@
     "build": "bob build",
     "prepack": "bob build"
   },
-  "author": "EscapeNomade",
+  "author": "Restu Dwi Cahyo",
   "license": "MIT",
   "peerDependencies": { "react": "*", "react-native": "*" },
   "devDependencies": {
